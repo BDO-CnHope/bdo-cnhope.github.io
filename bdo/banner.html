@@ -12,6 +12,12 @@ width:auto;
  
 .container {
   position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
 }
  
@@ -32,7 +38,7 @@ height:100%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: white;
 }
  
  .container:hover .overlay {
@@ -40,7 +46,7 @@ height:100%;
 }
 
 .text {
-  color: white;
+  color: black;
   font-size: 20px;
   font-weight: bold;
   position: absolute;
@@ -56,7 +62,8 @@ height:100%;
 <body>
  
  <div class="container">
-  <img src="images/bdo_banner.gif" alt="bdo banner" class="image">
+  <!-- <img src="images/bdo_banner.gif" alt="bdo banner" class="image"> -->
+  <div class="text" style="color:white;">黑色沙漠美服汉化工具<br>https://github.com/BDO-CnHope/bdocn</div>
   <div class="overlay">
     <div class="text">黑色沙漠美服汉化工具<br>https://github.com/BDO-CnHope/bdocn</div>
   </div>
